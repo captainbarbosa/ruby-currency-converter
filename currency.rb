@@ -11,5 +11,3 @@ class Currency
         @money_string  # => ["$", "50.05"]
     end                # => :value
 end                    # => :value
-
-currency = Currency.new("$50.05").value  # => ["$", "50.05"]
