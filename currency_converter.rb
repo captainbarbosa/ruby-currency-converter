@@ -1,13 +1,12 @@
 class Convert
-    def initialize(symbol, amount, rate)
-        @info = [symbol, amount, rate]
-    end
+    def initialize(symbol, amount)
+        @symbol = symbol
+        @amount = amount
 
-    def value
-        @info
+        @rate = rate = {:USD => 1, :EUR => 1.11903, :YEN => 0.00879}
     end
 
     def convert
-
+        
     end
 end                                                            # => :Convert
