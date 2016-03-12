@@ -7,9 +7,9 @@ class Currency
         @value = value
     end                                          # => :initialize
 
-    def symbol
+    def code
         money_hash = {"$" => :USD, "€" => :EUR , "¥" => :YEN }
-        money_hash[@symbol]
+        @code = money_hash[@symbol]
     end                                                         # => :symbol
 
     def value
