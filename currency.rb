@@ -5,14 +5,26 @@ class Currency
         value = split_money_string.join
         @symbol = symbol
         @value = value
-    end                                          # => :initialize
+    end
 
     def code
         money_hash = {"$" => :USD, "€" => :EUR , "¥" => :YEN }
         @code = money_hash[@symbol]
-    end                                                         # => :symbol
+    end
+
+    def symbol
+        @symbol
+    end
 
     def value
         @value
-    end         # => :value
-end             # => :value
+    end
+
+    def add(other)
+        if @symbol == other.symbol
+            Currency.new(@value + other.value)
+        else
+            false
+        end
+    end
+end

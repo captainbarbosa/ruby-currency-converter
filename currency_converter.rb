@@ -5,10 +5,9 @@ class Convert
         @request = request
         rate = {:USD => 1, :EUR => 1.11903, :YEN => 0.00879}
         @result = @amount/rate[@request]
-    end                                                       # => :initialize
+    end
 
     def result
         @result
-    end          # => :result
-
-end  # => :result
+    end
+end
