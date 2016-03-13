@@ -8,10 +8,6 @@ class Currency
         @value = value.to_f
     end
 
-    def code
-        money_hash = {"$" => :USD, "€" => :EUR , "¥" => :YEN }
-        @code = money_hash[@symbol]
-    end
 
     def symbol
         @symbol
