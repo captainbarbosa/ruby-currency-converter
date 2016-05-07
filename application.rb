@@ -1,6 +1,5 @@
-require_relative './currency.rb'            # => true
-require_relative './currency_converter.rb'  # => true
-require 'pry'                               # => true
+require_relative './currency.rb'
+require_relative './currency_converter.rb'
 
 
 # ----- Currency Object Tests: -----
